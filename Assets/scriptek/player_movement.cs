@@ -17,16 +17,38 @@ public class PlayerMovement : MonoBehaviour
     private float moveInput;
     private bool isGrounded;
 
-    void Awake()
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    
+   void Awake()
+{
+    rb = GetComponent<Rigidbody2D>();
+    animator = GetComponent<Animator>();
+    spriteRenderer = GetComponent<SpriteRenderer>();
+}
+
+void Update()
+{
+    // ellenőrizzük hogy a földön vagyunk-e
+    isGrounded = Physics2D.OverlapCircle(
+        groundCheck.position,
+        groundCheckRadius,
+        groundLayer
+    );
+
+    // karakter irányának beállítása
+    if (moveInput > 0)
     {
-        rb = GetComponent<Rigidbody2D>();
+        spriteRenderer.flipX = false;
+    }
+    else if (moveInput < 0)
+    {
+        spriteRenderer.flipX = true;
     }
 
-    void Update()
-    {
-        // ellenőrizük hogy a földön vagyunk-e
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-    }
+    // animációk kezelése
+    Setanimation(moveInput);
+}
 
     void FixedUpdate()
     {
@@ -47,6 +69,37 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
+    }
+
+
+
+/*----------animáció----------*/
+    private void Setanimation(float moveInput)
+    {
+        /*földön mozdás*/
+        if(isGrounded)
+        {
+            if(moveInput==0)
+            {
+                animator.Play("player_idle");
+            }
+            else
+            {
+                animator.Play("player_run");
+            }
+        }
+        /*levegőbe mozgás*/
+        else
+        {
+            if(rb.linearVelocity.y > 0)
+            {
+                animator.Play("player_jump");
+            }
+            else
+            {
+                animator.Play("player_fall");
+            }
         }
     }
 }
