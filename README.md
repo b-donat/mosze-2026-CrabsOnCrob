@@ -15,7 +15,7 @@ Ezt követően várd meg, ameddig letöltődik a telepítő csomag, majd nyisd m
 
 (Windows verzió esetén)...
 
-###Játék letöltése
+### Játék letöltése
 A Unity telepítése után töltsd le erről a Github oldalról a játékot.
 Ezt többféle módon is megteheted:
 - Vagy kattints az oldal jobb felső részén található zöld **Code** gombra, majd válaszd ki a **Download ZIP** lehetőséget.
@@ -28,6 +28,7 @@ git clone --branch final --single-branch https://github.com/b-donat/mosze-2026-C
 ```
 ### Unity
 Indítsd el a **Unity Hub** alkalmazást.
+
 A **Projects** fülön kattints az **Add project from disc**, majd válaszd ki a korábban letöltött mappát.
 
 ## Dokumentáció
