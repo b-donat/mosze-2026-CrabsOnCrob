@@ -109,7 +109,11 @@ TextureImporter:
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
       border: {x: 0, y: 0, z: 0, w: 0}
+=======
+      border: {x: 0, y: 1, z: 0, w: 0}
+>>>>>>> Stashed changes
       customData: 
       outline: []
       physicsShape: []
@@ -137,8 +141,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: 24843ab008de0fc459041d62b1e78beb
       internalID: 1112074304
+=======
+      spriteID: 60420c09d173a6a499bdbf23b85447e7
+      internalID: -398038563
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
@@ -159,8 +168,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: 0f30f5ec365784e4d89a6ca943e62ff5
       internalID: -1553145146
+=======
+      spriteID: e9b1f1b59f24c8842aba54f9451cc8b5
+      internalID: 688398153
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
@@ -181,8 +195,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: 9d034030a16dc184da28f6511c74d5ae
       internalID: 2134161895
+=======
+      spriteID: 9aa6de3005a65f24b9c1b71e97824156
+      internalID: -1217979477
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
@@ -203,8 +222,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: 9cf3313ac81c3314a8bbe8c99ae0ddd7
       internalID: -410062838
+=======
+      spriteID: 18239cc0343b16549833193d793a17e4
+      internalID: 1524990308
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
@@ -213,7 +237,11 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< Updated upstream
     spriteID: 62b6e03663558564b9b05288687c053a
+=======
+    spriteID: 0edb5be25f2ef7a47a3b561fd921109c
+>>>>>>> Stashed changes
     internalID: 0
     vertices: []
     indices: 
@@ -226,10 +254,17 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       checkpoint_sprite_0: -5117182299277498772
+<<<<<<< Updated upstream
       checkpoint_sprite_1: 1112074304
       checkpoint_sprite_2: -1553145146
       checkpoint_sprite_3: 2134161895
       checkpoint_sprite_4: -410062838
+=======
+      checkpoint_sprite_1: -398038563
+      checkpoint_sprite_2: 688398153
+      checkpoint_sprite_3: -1217979477
+      checkpoint_sprite_4: 1524990308
+>>>>>>> Stashed changes
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
