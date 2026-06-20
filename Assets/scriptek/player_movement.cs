@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public int hp = 10;
 
     [Header("Movement")]
-    public float moveSpeed = 5f;
+    public float moveSpeed = 3f;
 
     [Header("Jump")]
     public float jumpForce = 10f;
