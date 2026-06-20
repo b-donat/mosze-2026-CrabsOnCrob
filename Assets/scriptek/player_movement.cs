@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    public int hp = 1;/*ha ez 1 akkor elfelejtettem visszaállítani 10-re*/
+    public int hp = 10;/*ha ez 1 akkor elfelejtettem visszaállítani 10-re*/
 
     [Header("Movement")]
     public float moveSpeed = 3f;
@@ -121,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(collision.gameObject.tag == "Damage")
         {
-            hp -= 1;
+            hp -= 10;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             StartCoroutine(BlinkRed());
 
@@ -156,7 +156,7 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
 
         // a fade effekt elött kis várás
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(1f);
 
         // fade effekt
         if (FadeManager.Instance != null)
