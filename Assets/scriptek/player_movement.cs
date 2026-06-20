@@ -121,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(collision.gameObject.tag == "Damage")
         {
-            hp -= 10;
+            hp -= 1;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             StartCoroutine(BlinkRed());
 
@@ -141,7 +141,7 @@ public class PlayerMovement : MonoBehaviour
     
     private System.Collections.IEnumerator Die()
     {
-        hp = 1;
+        hp = 10;
 
         // fade out
         if (FadeManager.Instance != null)
