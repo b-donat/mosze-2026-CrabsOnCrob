@@ -26,6 +26,10 @@ Ezt többféle módon is megteheted:
 ```
 git clone --branch final --single-branch https://github.com/b-donat/mosze-2026-CrabsOnCrob.git
 ```
+### Unity
+Indítsd el a **Unity Hub** alkalmazást.
+A **Projects** fülön kattints az **Add project from disc**, majd válaszd ki a korábban letöltött mappát.
+
 ## Dokumentáció
 A projekthez kapcsolódó dokumentumok a **Documentation** mappában találhatóak.
 
