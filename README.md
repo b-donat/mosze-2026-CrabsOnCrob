@@ -24,7 +24,7 @@ Ezt többféle módon is megteheted:
 - Vagy klónozd a repót Git segítségével, ha telepítve van a gépeden:
 
 ```
-git clone https://github.com/b-donat/mosze-2026-CrabsOnCrob.git
+git clone --branch final --single-branch https://github.com/b-donat/mosze-2026-CrabsOnCrob.git
 ```
 ## Dokumentáció
 A projekthez kapcsolódó dokumentumok a **Documentation** mappában találhatóak.
