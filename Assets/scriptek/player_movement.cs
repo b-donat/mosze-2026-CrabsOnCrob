@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    public int hp = 10;
+    public int hp = 1;/*ha ez 1 akkor elfelejtettem visszaállítani 10-re*/
 
     [Header("Movement")]
     public float moveSpeed = 3f;
@@ -25,35 +25,41 @@ public class PlayerMovement : MonoBehaviour
     
 
 
-   void Awake()
-{
-    rb = GetComponent<Rigidbody2D>();
-    animator = GetComponent<Animator>();
-    spriteRenderer = GetComponent<SpriteRenderer>();
-}
-
-void Update()
-{
-    // ellenőrizzük hogy a földön vagyunk-e
-    isGrounded = Physics2D.OverlapCircle(
-        groundCheck.position,
-        groundCheckRadius,
-        groundLayer
-    );
-
-    // karakter irányának beállítása
-    if (moveInput > 0)
+    void Awake()
     {
-        spriteRenderer.flipX = false;
-    }
-    else if (moveInput < 0)
-    {
-        spriteRenderer.flipX = true;
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        /*induló checkpoint beállítása*/
+        if (RespawnManager.Instance != null)
+        {
+            RespawnManager.Instance.SetRespawnPoint(transform.position);
+        }
     }
 
-    // animációk kezelése
-    Setanimation(moveInput);
-}
+    void Update()
+    {
+        // ellenőrizzük hogy a földön vagyunk-e
+        isGrounded = Physics2D.OverlapCircle(
+            groundCheck.position,
+            groundCheckRadius,
+            groundLayer
+        );
+
+        // karakter irányának beállítása
+        if (moveInput > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (moveInput < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+
+        // animációk kezelése
+        Setanimation(moveInput);
+    }
 
     void FixedUpdate()
     {
@@ -107,34 +113,55 @@ void Update()
             }
         }
     }
-}
-/*
-/*----------sebzés----------
+
+
+/*----------sebzés----------*/
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Damage")
         {
-            health -= 1;
+            hp -= 1;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             StartCoroutine(BlinkRed());
 
-            if (health <= 0)
+            if (hp <= 0)
             {
-                Die()
+                StartCoroutine(Die());
             }
         }
     }
 
-    private IEnumerator BlinkRed()
+    private System.Collections.IEnumerator BlinkRed()
     {
-        spriteRenderer.color = Color.Red;
+        spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.color = Color.white;
     }
-
-    private void Die()
+    
+    private System.Collections.IEnumerator Die()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene
+        hp = 1;
+
+        // fade out
+        if (FadeManager.Instance != null)
+            yield return FadeManager.Instance.FadeOut();
+
+        // respawn
+        if (RespawnManager.Instance != null)
+        {
+            transform.position = RespawnManager.Instance.GetRespawnPoint();
+        }
+
+        rb.linearVelocity = Vector2.zero;
+
+        // a fade effekt elött kis várás
+        yield return new WaitForSeconds(0.1f);
+
+        // fade effekt
+        if (FadeManager.Instance != null)
+            yield return FadeManager.Instance.FadeIn();
     }
-}*/
+
+
+}
