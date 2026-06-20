@@ -29,6 +29,7 @@ git clone --branch final --single-branch https://github.com/b-donat/mosze-2026-C
 ### Unity
 Indítsd el a **Unity Hub** alkalmazást.
 
+
 A **Projects** fülön kattints az **Add project from disc**, majd válaszd ki a korábban letöltött mappát.
 
 ## Dokumentáció
