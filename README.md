@@ -4,7 +4,7 @@ Ez a feladat a Széchenyi István Egyetem Modern szoftverfejlesztési eszközök
 ## Bevezetés
 
 
-## Játék futtatása
+## Játék telepítése és futtatása
 A játék Unity 6000.3.11f1 verzióval készült, ezért a futtatáshoz ugyanezt vagy egy újabb Unity 6.3 LTS verziót ajánlott használni. 
 ### Unity letöltése
 A Unity 6000.3.11f1 letölthető, a Unity hivatalos oldaláról, [ezen a linken.](https://unity.com/releases/editor/whats-new/6000.3.11f1#installs)
@@ -15,8 +15,17 @@ Ezt követően várd meg, ameddig letöltődik a telepítő csomag, majd nyisd m
 
 (Windows verzió esetén)...
 
-A Unity telepítése után töltsd le erről a Githubról a játékot.
+###Játék letöltése
+A Unity telepítése után töltsd le erről a Github oldalról a játékot.
+Ezt többféle módon is megteheted:
+- Vagy kattints az oldal jobb felső részén található zöld **Code** gombra, majd válaszd ki a **Download ZIP** lehetőséget.
 
+  Majd csomagold ki a ZIP fájlt.
+- Vagy klónozd a repót Git segítségével, ha telepítve van a gépeden:
+
+```
+git clone https://github.com/b-donat/mosze-2026-CrabsOnCrob.git
+```
 ## Dokumentáció
 A projekthez kapcsolódó dokumentumok a **Documentation** mappában találhatóak.
 
