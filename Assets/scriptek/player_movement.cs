@@ -163,5 +163,10 @@ public class PlayerMovement : MonoBehaviour
             yield return FadeManager.Instance.FadeIn();
     }
 
-
+    //hátralökés efekt ha megsebez egy enemy
+    public void Knockback(Vector2 dir, float force)
+    {
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(dir * force, ForceMode2D.Impulse);
+    }
 }

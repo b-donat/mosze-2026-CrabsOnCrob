@@ -2,16 +2,42 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    /*ha a player belemegy egy checkpoint tag-ű objektumba,
-    akkor a respawn pontja átkerül a checkpoint-hoz*/
+    public Sprite inactiveSprite;
+    public Sprite activeSprite;
+
+    private SpriteRenderer sr;
+
+    private void Awake()
+    {
+        sr = GetComponent<SpriteRenderer>();
+
+        if (inactiveSprite != null)
+        {
+            sr.sprite = inactiveSprite;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
-        if (other.transform.root.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            Debug.Log(other.gameObject.name);
-            Debug.Log(other.transform.root.name);
-            RespawnManager.Instance.SetRespawnPoint(transform.position);
+            RespawnManager.Instance.SetCheckpoint(this);
         }
-    }    
+    }
+
+    public void Activate()
+    {
+        if (activeSprite != null)
+        {
+            sr.sprite = activeSprite;
+        }
+    }
+
+    public void Deactivate()
+    {
+        if (inactiveSprite != null)
+        {
+            sr.sprite = inactiveSprite;
+        }
+    }
 }
