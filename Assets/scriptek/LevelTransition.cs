@@ -30,7 +30,6 @@ public class LevelTransition : MonoBehaviour
         Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
         rb.linearVelocity = Vector2.zero;
 
-        // ⭐ EZ A LÉNYEG
         RespawnManager.Instance.SetRespawnPoint(newSpawn);
 
         yield return FadeManager.Instance.FadeIn();
