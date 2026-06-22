@@ -1,0 +1,1 @@
+A nem tudtam megoldani hogy a gépemen compile-oljanak a tesztek mert a asmdef file-ba  nem tudtam sehogyan elérni hogy hivatkozzon a scriptek mappára. Szóval kivannak kommentezve a tesztek és valószínüleg működnek is de azt csak a jóisten tudja.
