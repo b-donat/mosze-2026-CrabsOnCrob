@@ -16,7 +16,7 @@ PlayerSettings:
   productName: crab war
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.16862746, g: 0.16862746, b: 0.16862746, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 0.396
