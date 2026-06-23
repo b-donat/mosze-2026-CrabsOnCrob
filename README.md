@@ -1,6 +1,5 @@
 # CrabsOnCrob
 
-
 ## Bevezetés
 
 Ez a feladat a Széchenyi István Egyetem Modern szoftverfejlesztési eszközök GKNB_INTM129 tárgy keretében készült.
@@ -36,22 +35,19 @@ A játék Unity 6000.3.11f1 verzióval készült, ezért a futtatáshoz ugyanezt
 #### Játék letöltése
 5. A Unity telepítése után töltsd le erről a Github oldalról a játékot.
 Ezt többféle módon is megteheted:
-- Vagy kattints az oldal jobb felső részén található zöld **Code** gombra, majd válaszd ki a **Download ZIP** lehetőséget.
+  - Vagy kattints az oldal jobb felső részén található zöld **Code** gombra, majd válaszd ki a **Download ZIP** lehetőséget.
 
   Majd csomagold ki a ZIP fájlt.
-- Vagy klónozd a repót Git segítségével, ha telepítve van a gépeden:
+  - Vagy klónozd a repót Git segítségével, ha telepítve van a gépeden:
 
 ```
 git clone --branch final --single-branch https://github.com/b-donat/mosze-2026-CrabsOnCrob.git
 ```
 ### Unity
-Indítsd el a **Unity Hub** alkalmazást.
-
-A **Projects** fülön kattints az **Add project from disc**, majd válaszd ki a korábban letöltött mappát.
-
-Ezt követően a bal felső sarokban lévő **file** menü alatt található **Build and Run**-ra kattints.
-
-A Unity ezután automatikusan lefordítja a projektet, létrehozza a futtatható fájlokat, majd elindítja a játékot a számítógépeden.
+6. Indítsd el a **Unity Hub** alkalmazást.
+7. A **Projects** fülön kattints az **Add project from disc**, majd válaszd ki a korábban letöltött mappát.
+8. Ezt követően a bal felső sarokban lévő **file** menü alatt található **Build and Run**-ra kattints.
+9. A Unity ezután automatikusan lefordítja a projektet, létrehozza a futtatható fájlokat, majd elindítja a játékot a számítógépeden.
 
 ## Dokumentáció
 A projekthez kapcsolódó dokumentumok a **Documentation** mappában találhatóak.
