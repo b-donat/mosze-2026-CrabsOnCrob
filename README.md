@@ -1,7 +1,20 @@
 # CrabsOnCrob
-Ez a feladat a Széchenyi István Egyetem Modern szoftverfejlesztési eszközök GKNB_INTM129 tárgy keretében készült.
+
 
 ## Bevezetés
+
+Ez a feladat a Széchenyi István Egyetem Modern szoftverfejlesztési eszközök GKNB_INTM129 tárgy keretében készült.
+
+## Történet
+
+A galaktikus naptár 15026. évében járunk, az emberiség meghódította a galaxist miután forradalmi faster than light (FTL) technológiát fejlesztettek ki, ami lehetővé tette a naprendszerek közötti utazást. Az FTL-utazáshoz speciális üzemanyag szükséges, amelynek az egyik alapanyaga a Crob-22 óceánbolygón élő rákok páncéljából készült őrlemény. A Crob-22 felszínét 89,8%-ban víz fedi. A rákvadászat egy veszélyes, de nagyon nyereséges munka, ami miatt sokan jönnek a bolygóra, de csak kevesenjárnak sikerrel.
+
+Főszereplőnk egy amatőr rákvadász szerepébe bújik, aki olyan céllal érkezik a Crob-22 nevű exoplanétára, hogy pénzt keressen szülei orvosi kezelésére, mivel a biztosító nem hajlandó kifizetni a szükséges egészségügyi ellátást. Szülei megmentése érdekében rövid idő alatt nagy zsákmányt kell szereznie. Miután főhősünk az utazási
+költségeket hitelből biztosította, az elsődleges feladata ennek a tartozásnak a visszafizetése, csak ezt követően kezdheti meg a szülei részére szükséges pénz
+gyűjtését. Rövid időn belül nyilvánvalóvá válik számára, hogy az első cél elérése is emberpróbáló feladat, de már nincs visszaút, aláírta a hitelszerződést és csak akkor
+tud visszatérni a szüleihez, ha teljesíti a lehetetlent.
+
+Te ekkor kapcsolódsz be a történetbe, a feladatod, hogy a Crob-22-n teljesítsd a lehetetlennek tűnő küldetést.
 
 
 ## Játék telepítése és futtatása
@@ -35,4 +48,4 @@ A **Projects** fülön kattints az **Add project from disc**, majd válaszd ki a
 ## Dokumentáció
 A projekthez kapcsolódó dokumentumok a **Documentation** mappában találhatóak.
 
-## YouTube videó linkek:
+## YouTube videó [link](https://youtu.be/SRvBuhKmOAY)
