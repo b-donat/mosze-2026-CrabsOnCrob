@@ -48,4 +48,5 @@ A **Projects** fülön kattints az **Add project from disc**, majd válaszd ki a
 ## Dokumentáció
 A projekthez kapcsolódó dokumentumok a **Documentation** mappában találhatóak.
 
-## YouTube videó [link](https://youtu.be/SRvBuhKmOAY)
+## YouTube videó link
+[Link](https://youtu.be/SRvBuhKmOAY)
