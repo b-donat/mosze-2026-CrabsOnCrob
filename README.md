@@ -52,5 +52,5 @@ git clone --branch final --single-branch https://github.com/b-donat/mosze-2026-C
 ## Dokumentáció
 A projekthez kapcsolódó dokumentumok a **Documentation** mappában találhatóak.
 
-## YouTube videó [(link)](https://youtu.be/SRvBuhKmOAY)
-[![Video Title](https://img.youtube.com/vi/SRvBuhKmOAY/0.jpg)](https://www.youtube.com/watch?v=SRvBuhKmOAY)
+## YouTube videó [(link)](https://youtu.be/ROycCg2qlVQ)
+[![Video Title](https://img.youtube.com/vi/ROycCg2qlVQ/0.jpg)](https://www.youtube.com/watch?v=ROycCg2qlVQ)
