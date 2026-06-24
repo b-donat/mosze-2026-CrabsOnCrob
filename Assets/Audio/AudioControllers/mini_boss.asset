@@ -27,9 +27,9 @@ AudioRandomContainer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: mini_boss
-  m_Volume: 0
+  m_Volume: -15
   m_Pitch: 0
-  m_AutomaticTriggerTime: 0
+  m_AutomaticTriggerTime: 3
   m_LoopCount: 1
   m_VolumeRandomizationRange: {x: 0, y: 0}
   m_PitchRandomizationRange: {x: 0, y: 0}
