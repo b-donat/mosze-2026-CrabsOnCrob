@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-4052887104320247503
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Boss_ambience_2_aggr_#4-1778167366353_{-4052887104320247503}
+  m_AudioClip: {fileID: 8300000, guid: e0a29dd5b99cf424bae23d092e257a24, type: 3}
+  m_Volume: -10
+  m_Enabled: 1
+--- !u!1233149941 &22599427451127377
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Boss_ambience_1_deep_#4-1778167321689_{22599427451127377}
+  m_AudioClip: {fileID: 8300000, guid: f51414b74e4ccaf4baeb57564b10a3fa, type: 3}
+  m_Volume: -10
+  m_Enabled: 1
+--- !u!1233149941 &4796133854281459167
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Boss_ambience_2_aggr_#1-1778167345217_{4796133854281459167}
+  m_AudioClip: {fileID: 8300000, guid: eb07e205ef71caf4bb22a92960f3112a, type: 3}
+  m_Volume: -10
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: boss
+  m_Volume: -10
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 3
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -4052887104320247503}
+  - {fileID: 4796133854281459167}
+  - {fileID: 22599427451127377}
+  m_AvoidRepeatingLast: 1
+  m_PlaybackMode: 2
+  m_TriggerMode: 1
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 0
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
